@@ -12,22 +12,22 @@ body {
 /* NAVIGATION
     ==================================================================================================================================*/
 .wrapper {
-    width: 100vw;
-    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    height: 10vh;
     background-color: #f6f2f2;
 }
 .container {
-    width: 90vw;
-    height: 10vh;
-    position: fixed;
-    top: 0;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 90vw;
+    height: 10vh;
+    background-color: black;
 }
 nav {
     display: flex;
@@ -70,21 +70,20 @@ header {
     align-items: center;
     width: 90vw;
     margin: 5% 0 5% 0;
-
 }
 .header__container__small {
-    flex: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     flex-direction: row;
+    flex: 50%;
 }
 .header__container__small__left {
-    flex: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    flex: 50%;
 }
 h1 {
     text-transform: uppercase;
@@ -98,23 +97,23 @@ button {
     color: white;
     background-color: red;
     font-size: calc(0.7vw + 0.7vh);
-    border-radius: 10px ;
+    border-radius: 10px;
 }
 .header__container__small__right {
-    flex: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    flex: 50%;
 }
 .video {
-    width: calc(20vh + 20vw);
-    height: calc(15vh + 15vw);
-    background-color: #c4c0b1;
-    box-shadow: 0 0 30px 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: calc(20vh + 20vw);
+    height: calc(15vh + 15vw);
+    background-color: #c4c0b1;
+    box-shadow: 0 0 30px 2px;  
 }
 .square {
     display: flex;
@@ -166,18 +165,18 @@ section {
     margin: 5% 0 20vh 0;  
 }
 .blok {
-    flex: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     flex-direction: row;
+    flex: 50%;
 }
 .blok__left {
-    flex: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-direction: column;  
+    flex-direction: column; 
+    flex: 50%; 
 }  
 .blok__p {
     font-size: calc(0.9vw + 0.9vh);
@@ -200,13 +199,13 @@ h2 {
     margin: 1%;
 }
 .blok__right {
-    flex: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;  
     width: calc(20vh + 20vw);
     height: calc(15vh + 15vw);  
+    flex: 50%;
 }
 .blok__right__small {
     display: flex;
@@ -285,7 +284,8 @@ span {
     display: flex;
     flex-flow: row wrap;
     width: 90vw;
-    height: 70vh;    
+    height: 70vh;
+    margin: 0 0 60vw 0;    
 }
 .blok__img__castle {
     order: 1; 
@@ -357,8 +357,7 @@ span {
     align-items: center;
     width: 100vw;
     flex-direction: column;
-    background-color: rgb(18, 252, 10);
-    margin: 50vh 0 10vh 0;
+    margin: 60vh 0 20vh 0;
 }
 .team__center {
     display: flex;
@@ -366,7 +365,6 @@ span {
     align-items: center;
     width: 100vw;
     flex-direction: column;
-    background-color: rgb(65, 0, 150);
 }
 .team__header {
     display: flex;
@@ -374,7 +372,6 @@ span {
     flex-direction: column;
     align-items: flex-start;
     width: 90vw;
-    background-color: rgb(203, 136, 248);
 }
 .team__header__h2 {
     text-transform: uppercase;
@@ -385,7 +382,6 @@ span {
 }
 .team__header__p {
     width: 40vw;
-    background-color: cyan;
     font-size: calc(0.9vw + 0.9vh);
     position: relative;
 }
@@ -397,29 +393,84 @@ span {
     left: 0;
     width: 30%;
     height: 3px; 
-    background-color: red;
     content:"";
+    background-color: red;
 }
-
-
 .senior {
     width: 90vw;
     display: flex;
     justify-content: center;
     align-content: flex-start;
     justify-content: space-between;
-    background-color: yellowgreen;
+    margin: 0 0 35vw 0;
 }
 .senior__avatar {
     display: flex;
     width: 30vw;
     height: 70vh;
-    background-color: turquoise;
-    margin-right: 5%;
+    background: url(../img/kitty.jpg) no-repeat;
+    background-size: contain;
+    margin: 1%;
 }
 .senior__other {
     display: flex;
+    flex-direction: column;
     width: 70vw;
     height: 70vh;
-    background-color: violet;
+}
+h6 {
+    margin: 0.5%;
+    padding: 0;
+    font-size: calc(1.5vw + 1.5vh);
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.senior__span {
+    font-size: calc(1vw + 1vh);
+    font-style: italic;
+    width: 60vw;
+    text-transform: none;
+    margin: 5% 5% 5% 1%;
+}
+.senior__other__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;   
+    width: 50vw; 
+}
+  .content__img {
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-start;
+    width: 50vw;
+    margin: 2% 2% 2% 2%;  
+}
+.content__img__avatar {
+    order: 1; 
+    flex: 35%;
+    margin: 5px;
+    background: url(../img/avatar.jpg) no-repeat;
+    background-size: contain;
+}
+.content__img_cat {
+    order: 1; 
+    flex: 35%;
+    margin: 5px;
+    background: url(../img/cat.jpg) no-repeat;
+    background-size: contain;
+}
+.content__img__eyes {
+    order: 1; 
+    flex: 35%;
+    margin: 5px;
+    background: url(../img/eyes.jpg) no-repeat;
+    background-size: contain;
+}
+.content__img__sleep {
+    order: 1; 
+    flex: 35%;
+    margin: 5px;
+    background: url(../img/sleep.jpg) no-repeat;
+    background-size: contain;
 }
